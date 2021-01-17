@@ -1,0 +1,225 @@
+/***** General styles *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Inter", sans-serif;
+  }
+  
+  :root {
+    --mobile-margin: 0.5rem;
+    --button-shadow-default: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    --button-shadow-hover: 0px 8px 15px rgba(0, 0, 0, 0.25);
+    --main-background-color: #e8c3b7;
+    --secondary-background-color: #318663;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .main-nav-item__link,
+  .icons-item__link {
+    text-decoration: none;
+  }
+  
+  /***** Main style *****/
+  
+  .main-wrapper {
+    background-color: var(--main-background-color);
+    margin: var(--mobile-margin);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+  }
+  
+  .main-header {
+    background-color: var(--secondary-background-color);
+    height: 40vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+  
+  .main-header__img-wrapper,
+  .main-nav,
+  .hero-header,
+  .main-content,
+  .grid-items {
+    outline: 1px solid grey;
+  }
+  
+  .main-header__img-wrapper {
+    height: 33vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-header .profilkep {
+    display: inline-block;
+    width: 200px;
+  }
+  .main-nav {
+    height: 24vh;
+  }
+  
+  .grid-item__nav {
+    grid-row-start: 1;
+  }
+  
+  .main-nav-item {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.3rem;
+    padding: 0.3rem;
+  }
+  
+  .main-content {
+    text-align: center;
+    display: grid;
+  }
+  
+  .main-content__section {
+    max-width: 100%;
+  }
+  
+  /**** Name style *****/
+  
+  .grid-item__name {
+    grid-row-start: 2;
+  }
+  
+  .name-header {
+    height: 30vh;
+    margin: 0.5rem;
+  }
+  
+  .name-header-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .name-header__name {
+    width: 100%;
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-shadow: 1px 1px grey;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2.2rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .name-lengyelne {
+    position: relative;
+    text-align: left;
+    left: 20px;
+    overflow: hidden;
+    height: -0.8rem;
+  }
+  
+  .name-samu {
+    height: -0.8rem;
+    text-align: center;
+  }
+  
+  .name-krisztina {
+    position: relative;
+    text-align: right;
+    right: 35px;
+    height: -0.8rem;
+  }
+  
+  .name-header__education {
+    position: relative;
+    top: 120px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+  }
+  
+  .btn {
+    box-shadow: var(--button-shadow-default);
+  }
+  
+  .btn-group {
+    position: relative;
+    top: 130px;
+  }
+  
+  @media screen and (min-width: 576px) {
+    .main-wrapper {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .profilkep {
+      margin: 2rem;
+    }
+  
+    .grid-item__nav {
+      grid-row-start: 2;
+    }
+  
+    .grid-item__name {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      outline: 1px solid black;
+    }
+  
+    .name-header-wrapper {
+      width: 100%;
+      height: 100%;
+      /*display: flex;
+      flex-direction: column;
+      align-items: center;*/
+      position: absolute;
+    }
+  
+    .name-header__name {
+      width: 50%;
+      font-size: 1.9rem;
+      font-weight: 400;
+      text-shadow: 1px 1px grey;
+      align-items: center;
+      margin: 1rem;
+      letter-spacing: 0.1rem;
+    }
+  
+    .name-lengyelne {
+      position: relative;
+      left: -100px;
+    }
+  
+    .name-krisztina {
+      position: relative;
+      right: -100px;
+    }
+  
+    .name-header__education {
+      position: relative;
+      top: 150px;
+      letter-spacing: 0.1rem;
+    }
+  
+    .btn-group {
+      position: relative;
+      top: 180px;
+    }
+  }
