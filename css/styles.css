@@ -151,10 +151,10 @@
     box-shadow: var(--button-shadow-default);
   }
   
-  .btn-group {
+  /*.btn-group {
     position: relative;
     top: 130px;
-  }
+  }*/
   
   @media screen and (min-width: 576px) {
     .main-wrapper {
@@ -213,13 +213,13 @@
     }*/
   
     .name-header__education {
-      position: relative;
-      top: 150px;
+      /*position: relative;
+      top: 150px;*/
       letter-spacing: 0.1rem;
     }
   
-    .btn-group {
+    /*.btn-group {
       position: relative;
       top: 180px;
-    }
+    }*/
   }
