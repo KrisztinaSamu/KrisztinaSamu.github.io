@@ -14,15 +14,15 @@
     --mobile-margin: 0.5rem;
     --button-shadow-default: 0px 8px 15px rgba(0, 0, 0, 0.1);
     --button-shadow-hover: 0px 8px 15px rgba(0, 0, 0, 0.25);
-    --main-background-color: #e8c3b7;
-    --secondary-background-color: #318663;
+    --main-color: #efe4e0;
+    --secondary-color: /*#12135d;*/ #163f5d;
   }
   
   ul {
     list-style: none;
   }
   
-  .main-nav-item__link,
+  .nav-item__link,
   .icons-item__link {
     text-decoration: none;
   }
@@ -30,7 +30,7 @@
   /***** Main style *****/
   
   .main-wrapper {
-    background-color: var(--main-background-color);
+    background-color: var(--main-color);
     margin: var(--mobile-margin);
   }
   
@@ -40,7 +40,7 @@
   }
   
   .main-header {
-    background-color: var(--secondary-background-color);
+    background-color: var(--secondary-color);
     height: 40vh;
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -48,7 +48,6 @@
   
   .main-header__img-wrapper,
   .main-nav,
-  .hero-header,
   .main-content,
   .grid-items {
     outline: 1px solid grey;
@@ -66,7 +65,7 @@
   }
 
   .main-nav {
-    background-color: var(--secondary-background-color);
+    background-color: var(--secondary-color);
   }
   
   .grid-item__nav {
@@ -78,6 +77,10 @@
     font-size: 1rem;
     margin: 0.3rem;
     padding: 0.3rem;
+  }
+
+  .nav-item__link {
+      color: var(--main-color);
   }
   
   .main-content {
