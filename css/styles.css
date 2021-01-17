@@ -55,7 +55,7 @@
   }
   
   .main-header__img-wrapper {
-    height: 33vh;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -64,8 +64,9 @@
     display: inline-block;
     width: 200px;
   }
+
   .main-nav {
-    height: 24vh;
+    background-color: var(--secondary-background-color);
   }
   
   .grid-item__nav {
