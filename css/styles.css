@@ -41,9 +41,8 @@
   
   .main-header {
     background-color: var(--secondary-color);
-    height: 40vh;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
+    
+    
   }
   
   .main-header__img-wrapper,
@@ -54,9 +53,8 @@
   }
   
   .main-header__img-wrapper {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
   }
   
   .main-header .profilkep {
@@ -159,6 +157,9 @@
     position: relative;
     top: 130px;
   }*/
+
+
+  /***** Media query *****/
   
   @media screen and (min-width: 576px) {
     .main-wrapper {
@@ -167,6 +168,13 @@
       margin-right: auto;
       display: grid;
       grid-template-columns: 1fr 2fr;
+    }
+
+    .main-header {
+      height: 40vh;
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+
     }
   
     .profilkep {
