@@ -138,6 +138,19 @@
     visibility: visible;
   }
 
+  #menu__toggle:checked ~ .hamburger-button .hamburger-lines {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .hamburger-button .hamburger-lines:before {
+    display: none;
+  }
+
+  #menu__toggle:checked ~ .hamburger-button .hamburger-lines:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
 
   .main-content {
     text-align: center;
