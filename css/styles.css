@@ -41,8 +41,6 @@
   
   .main-header {
     background-color: var(--secondary-color);
-    
-    
   }
   
   .main-header__img-wrapper,
@@ -61,29 +59,93 @@
     display: inline-block;
     width: 200px;
   }
+  
+ /***** Hamburger menu *****/
 
   .main-nav {
+    display: none;
+  }
+
+  #menu__toggle {
+    visibility: hidden;
+ }
+
+  .hamburger-button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    margin: 0 15px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .hamburger-lines, 
+  .hamburger-lines::before,
+  .hamburger-lines::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+
+  .hamburger-lines::before {
+    content: "";
+    top: -10px;
+  }
+
+  .hamburger-lines::after {
+    content: "";
+    top: 10px;
+  }
+
+  .hamburger-menu__box {
+    display: block;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    padding: 40px 0;
     background-color: var(--secondary-color);
+    height: 40%;
+    visibility: hidden;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   }
-  
-  .grid-item__nav {
-    grid-row-start: 1;
-  }
-  
+
   .main-nav-item {
     text-align: center;
-    font-size: 1rem;
-    margin: 0.3rem;
-    padding: 0.3rem;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .main-nav-item:hover {
+    background-color: #419D78;
   }
 
   .nav-item__link {
-      color: var(--main-color);
+    color: var(--main-color);
   }
-  
+
+  .nav-item__link:hover {
+    cursor: pointer;
+  }
+
+  #menu__toggle:checked ~ .hamburger-menu__box {
+    visibility: visible;
+  }
+
+
   .main-content {
     text-align: center;
     display: grid;
+  }
+
+  #menu__toggle:checked {
+    visibility: visible;
   }
   
   .main-content__section {
@@ -162,6 +224,11 @@
   /***** Media query *****/
   
   @media screen and (min-width: 576px) {
+
+    .hamburger-menu {
+      display: none;
+    }
+
     .main-wrapper {
       width: 80%;
       margin-left: auto;
@@ -174,17 +241,32 @@
       height: 40vh;
       display: grid;
       grid-template-rows: 1fr 2fr;
-
     }
   
     .profilkep {
       margin: 2rem;
     }
-  
-    .grid-item__nav {
-      grid-row-start: 2;
+
+  /***** Nav menu *****/
+
+    .main-nav {
+      background-color: var(--secondary-color);
+      display: block;
+    }
+
+    .main-nav-item {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+    
+    .nav-item__link {
+      color: var(--main-color);
     }
   
+    /***** Name style *****/
+
     .grid-item__name {
       grid-column-start: 2;
       grid-row-start: 1;
