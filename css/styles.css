@@ -16,6 +16,9 @@
     --button-shadow-hover: 0px 8px 15px rgba(0, 0, 0, 0.25);
     --main-color: /*#efe4e0;*/#c8b289;
     --secondary-color: /*#12135d;*/ #163f5d;/*#e7ddd4;*/
+    --box-shadow-style: 
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   }
   
   ul {
@@ -39,23 +42,22 @@
     grid-template-rows: repeat(5, auto);
   }
   
-  .main-header {
+  .img-header {
     background-color: var(--secondary-color);
   }
   
-  .main-header__img-wrapper,
   .main-nav,
   .main-content,
   .grid-items {
     outline: 1px solid grey;
   }
   
-  .main-header__img-wrapper {
+  .img-wrapper {
     display: flex;
     justify-content: center;
   }
   
-  .main-header .profilkep {
+  .img-header .profilkep {
     display: inline-block;
     width: 200px;
   }
@@ -156,14 +158,15 @@
     transform: rotate(90deg);
   }
 
-
-  .main-content {
-    text-align: center;
-    display: grid;
-  }
-
   #menu__toggle:checked {
     visibility: visible;
+  }
+
+  /***** Content *****/
+
+   .main-content {
+    text-align: center;
+    display: grid;
   }
   
   .main-content__section {
@@ -221,7 +224,7 @@
     height: -0.8rem;
   }*/
   
-  .name-header__education {
+  .name-header__qualification {
    /* position: relative;
     top: 120px;*/
     font-size: 1.7rem;
@@ -255,7 +258,7 @@
       grid-template-columns: 1fr 2fr;
     }
 
-    .main-header {
+    .img-header {
       height: 40vh;
       display: grid;
       grid-template-rows: 1fr 2fr;
@@ -270,6 +273,16 @@
     .main-nav {
       background-color: var(--secondary-color);
       display: block;
+    }
+
+    .main-nav__menu {
+      display: flex;
+      flex-direction: column;
+
+      box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(0, 0, 0, 0.25);
+      width: 90%;
+      margin: 10px;
     }
 
     .main-nav-item {
@@ -324,7 +337,7 @@
       right: -100px;
     }*/
   
-    .name-header__education {
+    .name-header__qualification {
       /*position: relative;
       top: 150px;*/
       letter-spacing: 0.1rem;
