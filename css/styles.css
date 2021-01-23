@@ -42,17 +42,26 @@
     grid-template-rows: repeat(5, auto);
   }
   
-  .img-header {
+  /*.img-header {
     background-color: var(--secondary-color);
-  }
+  }*/
   
   .main-nav,
   .main-content,
   .grid-items {
     outline: 1px solid grey;
   }
+
+  .img-wrapper,
+  .main-nav__menu {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.4) ,
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.4);
+    width: 90%;
+    margin: 10px;
+  }
   
   .img-wrapper {
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
   }
@@ -130,6 +139,7 @@
 
   .main-nav-item:hover {
     background-color: #419D78;
+    cursor: pointer;
   }
 
   .nav-item__link {
@@ -137,6 +147,7 @@
   }
 
   .nav-item__link:hover {
+    background-color: #419D78;
     cursor: pointer;
   }
 
@@ -196,37 +207,11 @@
     font-size: 1.9rem;
     font-weight: 400;
     text-shadow: 1px 1px grey;
-    /*position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;*/
     line-height: 2.2rem;
     letter-spacing: 0.1rem;
   }
   
-  /*.name-lengyelne {
-    position: relative;
-    text-align: left;
-    left: 20px;
-    overflow: hidden;
-    height: -0.8rem;
-  }
-  
-  .name-samu {
-    height: -0.8rem;
-    text-align: center;
-  }
-  
-  .name-krisztina {
-    position: relative;
-    text-align: right;
-    right: 35px;
-    height: -0.8rem;
-  }*/
-  
   .name-header__qualification {
-   /* position: relative;
-    top: 120px;*/
     font-size: 1.7rem;
     font-weight: 800;
     letter-spacing: 0.1rem;
@@ -236,12 +221,6 @@
     box-shadow: var(--button-shadow-default);
   }
   
-  /*.btn-group {
-    position: relative;
-    top: 130px;
-  }*/
-
-
   /***** Media query *****/
   
   @media screen and (min-width: 576px) {
@@ -251,7 +230,7 @@
     }
 
     .main-wrapper {
-      width: 80%;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
       display: grid;
@@ -271,18 +250,14 @@
   /***** Nav menu *****/
 
     .main-nav {
-      background-color: var(--secondary-color);
-      display: block;
+      /*background-color: var(--main-color);*/
+      display: flex;
     }
 
     .main-nav__menu {
+      background-color: var(--secondary-color);
       display: flex;
       flex-direction: column;
-
-      box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-      -8px -8px 12px 0 rgba(0, 0, 0, 0.25);
-      width: 90%;
-      margin: 10px;
     }
 
     .main-nav-item {
