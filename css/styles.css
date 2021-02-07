@@ -26,7 +26,6 @@ ul {
 }
 
 .menu-item__link,
-.icons-item__link,
 .cta {
   text-decoration: none;
 }
@@ -53,7 +52,7 @@ ul {
   font-size: 1.6rem;
   padding: 1rem 3rem;
   margin: 0 auto;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 .img-wrapper .profilkep {
@@ -226,6 +225,15 @@ ul {
   box-shadow: var(--button-shadow-default);
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-item {
+  padding: 0.5rem;
+}
+
 /***** Media query *****/
 
 @media screen and (min-width: 992px) {
@@ -276,11 +284,6 @@ ul {
     height: 100vh;
   }
 
-
- /* .profilkep {
-    margin: 2rem;
-  }*/
-
 /***** Nav menu *****/
 
   .menu-item {
@@ -303,9 +306,6 @@ ul {
   .name,
   .qualification {
     letter-spacing: 0.1rem;
-  }
-
-  .name {
   }
 
 }
