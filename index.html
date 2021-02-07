@@ -42,49 +42,52 @@
             </div>
         </section>
     
-        <header class="img-header  grid-item__img">
+        <header class="nav-header  grid-item__img">
             <div class="img-wrapper">
                 <img src="img/i.jpg" alt="profilkep" class="profilkep" />
             </div>
+        
+
+            <nav class="main-nav  grid-item__nav">
+                <ul class="main-nav__menu">
+                    <li class="menu-item">
+                        <a href="#rolam" class="menu-item__link">
+                            Rólam
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#portfolio" class="menu-item__link">
+                            Portfólió
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#kapcsolat" class="menu-item__link">
+                            Kapcsolat
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-
-         <nav class="main-nav  grid-item__nav">
-            <ul class="main-nav__menu">
-                <li class="menu-item">
-                    <a href="#rolam" class="menu-item__link">
-                        Rólam
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#portfolio" class="menu-item__link">
-                        Portfólió
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#kapcsolat" class="menu-item__link">
-                        Kapcsolat
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="banner-container  grid-item__banner">
-            <div class="name-wrapper">
-                <h1 class="name">
-                    Samu Krisztina
-                </h1>
-                <h2 class="qualification">
-                    Frontend Webfejlesztő
-                </h2>
-                <div class="btn-group">
-                    <a href="resume" class="">Resume</a>
-                    <a href="resume" class="">Finde me</a>
-                </div>
-            </div>
-        </div>
+        <!---->
 
         <main class="content  grid-item__content">
-            <section class="content__section  grid-items" id="rolam">
+
+            <section class="banner-container"> <!--grid-item__banner-->
+                <div class="name-wrapper">
+                    <h1 class="name">
+                        Samu Krisztina
+                    </h1>
+                    <h2 class="qualification">
+                        Frontend Webfejlesztő
+                    </h2>
+                    <div class="btn-group">
+                        <a href="resume" class="">Resume</a>
+                        <a href="resume" class="">Finde me</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-container  content__section" id="rolam"><!--grid-items-->
                 <div class="section-box">
                     <h1>Rólam</h1>
                     <p>
@@ -102,7 +105,7 @@
                 </div>
             </section>
 
-            <section class="content__section  grid-items" id="portfoliok">
+            <section class="portfolio-container  content__section" id="portfoliok"><!--grid-items-->
                 <div class="section-box">
                     <h1>Portfóliók</h1>
                     <div class="portfolio-box">Portfolio 1</div>
@@ -112,7 +115,7 @@
                 </div>
             </section>
 
-            <section class="content__section  grid-items" id="kapcsolat">
+            <section class="contact-container  content__section" id="kapcsolat"><!--grid-items-->
                 <div class="section-box">
                     <h1>Kapcsolat</h1>
                     <p>
