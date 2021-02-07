@@ -9,84 +9,83 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Portfólió Oldal</title>
 </head>
 <body>
-    <section class="hamburger-menu">
-        <input type="checkbox" name="hamburger" id="menu__toggle"/>
-        <label for="menu__toggle" class="hamburger-button">
-            <span class="hamburger-lines"></span>
-        </label>
-
-        <ul class="hamburger-menu__box">
-            <li class="main-nav-item">
-                <a href="#rolam" class="nav-item__link">
-                    Rólam
-                </a>
-            </li>
-            <li class="main-nav-item">
-                <a href="#portfolio" class="nav-item__link">
-                    Portfólió
-                </a>
-            </li>
-            <li class="main-nav-item">
-                <a href="#kapcsolat" class="nav-item__link">
-                    Kapcsolat
-                </a>
-            </li>
-        </ul>
-    </section>
     <div class="main-wrapper  grid-container">
         
+        <section class="hamburger-menu__wrapper">
+            <div class="hamburger-menu">
+                <input type="checkbox" name="hamburger" id="menu__toggle"/>
+                <label for="menu__toggle" class="hamburger-button">
+                    <span class="hamburger-lines"></span>
+                </label>
+
+                <ul class="hamburger-menu__box">
+                    <li class="main-nav-item">
+                        <a href="#rolam" class="nav-item__link">
+                            Rólam
+                        </a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="#portfolio" class="nav-item__link">
+                            Portfólió
+                        </a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="#kapcsolat" class="nav-item__link">
+                            Kapcsolat
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
         <header class="img-header  grid-item__img">
             <div class="img-wrapper">
-                <img src="/img/pic.jpg" alt="profilkep" class="profilkep" />
+                <img src="img/i.jpg" alt="profilkep" class="profilkep" />
             </div>
         </header>
 
-        
-        <nav class="main-nav grid-item__nav">
+         <nav class="main-nav  grid-item__nav">
             <ul class="main-nav__menu">
-                <li class="main-nav-item">
-                    <a href="#rolam" class="nav-item__link">
+                <li class="menu-item">
+                    <a href="#rolam" class="menu-item__link">
                         Rólam
                     </a>
                 </li>
-                <li class="main-nav-item">
-                    <a href="#portfolio" class="nav-item__link">
+                <li class="menu-item">
+                    <a href="#portfolio" class="menu-item__link">
                         Portfólió
                     </a>
                 </li>
-                <li class="main-nav-item">
-                    <a href="#kapcsolat" class="nav-item__link">
+                <li class="menu-item">
+                    <a href="#kapcsolat" class="menu-item__link">
                         Kapcsolat
                     </a>
                 </li>
             </ul>
         </nav>
 
-        <div class="name-header grid-item__name">
-            <div class="name-header-wrapper">
-                <h1 class="name-header__name">
+        <div class="banner-container  grid-item__banner">
+            <div class="name-wrapper">
+                <h1 class="name">
                     Samu Krisztina
                 </h1>
-                <h2 class="name-header__qualification">
+                <h2 class="qualification">
                     Frontend Webfejlesztő
                 </h2>
                 <div class="btn-group">
-                    <button type="submit" class="btn btn-oneletrajz">
-                        Önéletrajz
-                    </button>
-                    <button type="submit" class="btn btn-contact">
-                        Dolgozzunk együtt
-                    </button>
+                    <a href="resume" class="">Resume</a>
+                    <a href="resume" class="">Finde me</a>
                 </div>
             </div>
         </div>
 
-        <main class="main-content grid-item__content">
-            <section class="main-content__section grid-items" id="rolam">
-                <div class="section-content">
+        <main class="content  grid-item__content">
+            <section class="content__section  grid-items" id="rolam">
+                <div class="section-box">
                     <h1>Rólam</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -103,26 +102,18 @@
                 </div>
             </section>
 
-            <section class="main-content__section grid-items" id="portfoliok">
-                <div class="section-content">
+            <section class="content__section  grid-items" id="portfoliok">
+                <div class="section-box">
                     <h1>Portfóliók</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Dicta deserunt culpa, quasi perferendis cupiditate 
-                        doloremque autem illo ratione blanditiis sunt a quod 
-                        exercitationem molestiae ipsam nam quos, omnis, 
-                        asperiores possimus.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Dicta deserunt culpa, quasi perferendis cupiditate 
-                        doloremque autem illo ratione blanditiis sunt a quod 
-                        exercitationem molestiae ipsam nam quos, omnis, 
-                        asperiores possimus.
-                    </p>
+                    <div class="portfolio-box">Portfolio 1</div>
+                    <div class="portfolio-box">Portfolio 2</div>
+                    <div class="portfolio-box">Portfolio 3</div>
+                    <div class="portfolio-box">Portfolio 4</div>
                 </div>
             </section>
 
-            <section class="main-content__section grid-items" id="kapcsolat">
-                <div class="section-content">
+            <section class="content__section  grid-items" id="kapcsolat">
+                <div class="section-box">
                     <h1>Kapcsolat</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
