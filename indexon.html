@@ -13,7 +13,7 @@
     <title>Portfólió Oldal</title>
 </head>
 <body>
-    <div class="main-wrapper  grid-container">
+    <div class="main-wrapper">
         
         <section class="hamburger-menu__wrapper">
             <div class="hamburger-menu">
@@ -42,13 +42,13 @@
             </div>
         </section>
     
-        <header class="nav-header  grid-item__img">
-            <div class="img-wrapper">
+        <header class="nav-header">
+            <div class="img-wrapper container">
                 <img src="img/i.jpg" alt="profilkep" class="profilkep" />
             </div>
         
 
-            <nav class="main-nav  grid-item__nav">
+            <nav class="main-nav  container">
                 <ul class="main-nav__menu">
                     <li class="menu-item">
                         <a href="#rolam" class="menu-item__link">
@@ -61,6 +61,11 @@
                         </a>
                     </li>
                     <li class="menu-item">
+                        <a href="#skills" class="menu-item__link">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="menu-item">
                         <a href="#kapcsolat" class="menu-item__link">
                             Kapcsolat
                         </a>
@@ -68,11 +73,10 @@
                 </ul>
             </nav>
         </header>
-        <!---->
 
-        <main class="content  grid-item__content">
+        <main class="main-content">
 
-            <section class="banner-container"> <!--grid-item__banner-->
+            <section class="container  banner-container">
                 <div class="name-wrapper">
                     <h1 class="name">
                         Samu Krisztina
@@ -81,13 +85,13 @@
                         Frontend Webfejlesztő
                     </h2>
                     <div class="btn-group">
-                        <a href="resume" class="">Resume</a>
-                        <a href="resume" class="">Finde me</a>
+                        <a href="resume" class="cta">Resume</a>
+                        <a href="resume" class="cta">Finde me</a>
                     </div>
                 </div>
             </section>
 
-            <section class="about-container  content__section" id="rolam"><!--grid-items-->
+            <section class="container  about-container" id="rolam">
                 <div class="section-box">
                     <h1>Rólam</h1>
                     <p>
@@ -105,7 +109,7 @@
                 </div>
             </section>
 
-            <section class="portfolio-container  content__section" id="portfoliok"><!--grid-items-->
+            <section class="container  portfolio-container" id="portfoliok">
                 <div class="section-box">
                     <h1>Portfóliók</h1>
                     <div class="portfolio-box">Portfolio 1</div>
@@ -115,7 +119,22 @@
                 </div>
             </section>
 
-            <section class="contact-container  content__section" id="kapcsolat"><!--grid-items-->
+            <section class="container skills">
+                <h2 class="list-name">
+                    Skills
+                </h2>
+            <ul>
+                <li class="list-item">HTML5</li>
+                <li class="list-item">CSS3</li>
+                <li class="list-item">JavaScript</li>
+                <li class="list-item">Python</li>
+                <li class="list-item">React</li>
+                <li class="list-item">Bootstrap</li>
+                <li class="list-item">Django</li>
+            </ul>
+        </section>
+
+            <section class="container  contact-container" id="kapcsolat">
                 <div class="section-box">
                     <h1>Kapcsolat</h1>
                     <p>
@@ -132,9 +151,9 @@
                     </p>
                 </div>
             </section>
-        </main>
+        
 
-        <footer class="main-footer grid-item__footer">
+        <footer class="main-footer  container">
             <ul class="icons">
                 <li class="icons-item">
                     <a href="#" class="icons-item__link">
@@ -148,6 +167,7 @@
                 </li>
             </ul>
         </footer>
+    </main>
     </div>
 </body>
 </html>
