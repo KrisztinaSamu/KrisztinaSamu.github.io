@@ -7,7 +7,7 @@
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family:'Raleway', sans-serif;/*"Inter", sans-serif;*/
 }
 
 :root {
@@ -39,6 +39,7 @@ ul {
 .img-wrapper {
   display: flex;
   justify-content: center;
+  height: 35vh
 }
 
 /***** Main style *****/
@@ -49,15 +50,17 @@ ul {
 }
 
 .container {
-  font-size: 1.6rem;
-  padding: 1rem 3rem;
-  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
   /*border: 1px solid green;*/
 }
 
-.img-wrapper .profilkep {
-  display: inline-block;
-  width: 12.5rem;
+.container-title {
+  text-align: center;
+  margin: 2rem;
+}
+
+.profilkep {
   border-radius: 50%;
 }
 
@@ -118,15 +121,16 @@ ul {
   position: fixed; 
   top: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 1.875rem 0;
   background-color: var(--secondary-color);
-  height: 40%;
+  height: 35vh;
   visibility: hidden;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   /** Átmenet: felülről beúszik **/
   top: -250px;
   transition-duration: 0.4s;
 }
+
 
 
 /***** Menu styles *****/
@@ -176,22 +180,16 @@ ul {
 }
 
 #menu__toggle:checked {
-  visibility: visible;
+  visibility: hidden;
 }
 
-/***** Content *****/
 
- .main-content {
-  text-align: center;
-  display: grid;
-}
 
-/**** Name style *****/
+/**********************/
+/***** Main style *****/
+/**********************/
 
-.banner-container {
-  height: 30vh;
-  margin: 0.5rem;
-}
+/***** Banner container *****/
 
 .name-wrapper {
   height: 100%;
@@ -203,6 +201,7 @@ ul {
 
 .name,
 .qualification {
+  margin-bottom: 1.5rem;
   letter-spacing: 0.1rem;
   text-align: center;
 }
@@ -210,10 +209,11 @@ ul {
 
 .name {
   width: 100%;
-  font-size: 1.9rem;
-  font-weight: 400;
+  font-size: 2.9rem;
+  font-weight: 500;
   text-shadow: 1px 1px grey;
-  line-height: 2.2rem;
+  line-height: 3rem;
+ 
 }
 
 .qualification {
@@ -221,8 +221,32 @@ ul {
   font-weight: 800;
 }
 
+.btn {
+  margin-top: 1rem;
+}
+
 .cta {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
   box-shadow: var(--button-shadow-default);
+  padding: 0.8rem 1rem;
+  
+}
+
+/***** Portfolio container *****/
+
+.portfolio-box {
+  outline: 1px solid yellow;
+}
+
+.project-picture {
+  width: 50vw;
+}
+
+/***** Skills container *****/
+
+.list-item {
+  text-align: center;
 }
 
 .icons {

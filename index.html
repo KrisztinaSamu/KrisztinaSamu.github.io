@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Portfólió Oldal</title>
 </head>
@@ -23,19 +25,24 @@
                 </label>
 
                 <ul class="hamburger-menu__box">
-                    <li class="main-nav-item">
-                        <a href="#rolam" class="nav-item__link">
-                            Rólam
+                    <li class="menu-item">
+                        <a href="#rolam" class="menu-item__link">
+                           About
                         </a>
                     </li>
-                    <li class="main-nav-item">
-                        <a href="#portfolio" class="nav-item__link">
-                            Portfólió
+                    <li class="menu-item">
+                        <a href="#portfolio" class="menu-item__link">
+                            Portfolio
                         </a>
                     </li>
-                    <li class="main-nav-item">
-                        <a href="#kapcsolat" class="nav-item__link">
-                            Kapcsolat
+                    <li class="menu-item">
+                        <a href="#skill-s" class="menu-item__link">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#kapcsolat" class="menu-item__link">
+                            Contact
                         </a>
                     </li>
                 </ul>
@@ -82,18 +89,19 @@
                         Samu Krisztina
                     </h1>
                     <h2 class="qualification">
-                        Frontend Webfejlesztő
+                        Frontend Developer
                     </h2>
-                    <div class="btn-group">
+                    <div class="btn">
                         <a href="resume" class="cta">Resume</a>
-                        <a href="resume" class="cta">Finde me</a>
                     </div>
                 </div>
             </section>
 
             <section class="container  about-container" id="rolam">
                 <div class="section-box">
-                    <h1>About</h1>
+                    <h2 class="container-title">
+                        About
+                    </h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Dicta deserunt culpa, quasi perferendis cupiditate 
@@ -111,32 +119,84 @@
 
             <section class="container  portfolio-container" id="portfolio">
                 <div class="section-box">
-                    <h1>Portfolio</h1>
-                    <div class="portfolio-box">Portfolio 1</div>
-                    <div class="portfolio-box">Portfolio 2</div>
-                    <div class="portfolio-box">Portfolio 3</div>
-                    <div class="portfolio-box">Portfolio 4</div>
+                    <h2 class="container-title">
+                        Portfolio
+                    </h2>
+                    <div class="portfolio-box">
+                        <div class="picture-wrapper">
+                            <img src="img/placeholder.png" class="project-picture" alt="picture"></img>
+                        </div>
+                        <h3>Portfolio 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Aut rerum corrupti illum unde consequuntur 
+                            quis doloribus alias vero? Esse eos rem blanditiis 
+                            possimus eaque animi reiciendis culpa commodi eum 
+                            tenetur!
+                        </p>
+                    </div>
+                    <div class="portfolio-box">
+                        <div class="picture-wrapper">
+                            <img src="img/placeholder.png" class="project-picture" alt="picture"></img>
+                        </div>
+                        <h3>Portfolio 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Aut rerum corrupti illum unde consequuntur 
+                            quis doloribus alias vero? Esse eos rem blanditiis 
+                            possimus eaque animi reiciendis culpa commodi eum 
+                            tenetur!
+                        </p>
+                    </div>
+                    <div class="portfolio-box">
+                        <div class="picture-wrapper">
+                            <img src="img/placeholder.png" class="project-picture" alt="picture"></img>
+                        </div>
+                        <h3>Portfolio 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Aut rerum corrupti illum unde consequuntur 
+                            quis doloribus alias vero? Esse eos rem blanditiis 
+                            possimus eaque animi reiciendis culpa commodi eum 
+                            tenetur!
+                        </p>
+                    </div>
+                    <div class="portfolio-box">
+                        <div class="picture-wrapper">
+                            <img src="img/placeholder.png" class="project-picture" alt="picture"></img>
+                        </div>
+                        <h3>Portfolio 4</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Aut rerum corrupti illum unde consequuntur 
+                            quis doloribus alias vero? Esse eos rem blanditiis 
+                            possimus eaque animi reiciendis culpa commodi eum 
+                            tenetur!
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <section class="container skills" id="skill-s">
-                <h2 class="list-name">
+            <section class="container  skills-container" id="skill-s">
+                <h2 class="list-name container-title">
                     Skills
                 </h2>
-            <ul>
-                <li class="list-item">HTML5</li>
-                <li class="list-item">CSS3</li>
-                <li class="list-item">JavaScript</li>
-                <li class="list-item">Python</li>
-                <li class="list-item">React</li>
-                <li class="list-item">Bootstrap</li>
-                <li class="list-item">Django</li>
-            </ul>
-        </section>
+                <ul>
+                    <li class="list-item">HTML5</li>
+                    <li class="list-item">CSS3</li>
+                    <li class="list-item">JavaScript</li>
+                    <li class="list-item">Python</li>
+                    <li class="list-item">React</li>
+                    <li class="list-item">Bootstrap</li>
+                    <li class="list-item">Django</li>
+                </ul>
+            </section>
 
             <section class="container  contact-container" id="kapcsolat">
                 <div class="section-box">
-                    <h1>Contact</h1>
+                    <h2 class="container-title">
+                        Contact
+                    </h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Dicta deserunt culpa, quasi perferendis cupiditate 
