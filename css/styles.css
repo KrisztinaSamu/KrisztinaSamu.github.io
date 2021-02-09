@@ -1,4 +1,6 @@
+/**************************/
 /***** General styles *****/
+/**************************/
 
 * {
   margin: 0;
@@ -19,6 +21,7 @@ html {
   --box-shadow-style: 
     12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  --hover-bg-color: #419D78;
 }
 
 ul {
@@ -30,20 +33,6 @@ ul {
   text-decoration: none;
 }
 
-/***** Header style *****/
-
-.nav-header {
-  margin-top: 3rem;
-}
-
-.img-wrapper {
-  display: flex;
-  justify-content: center;
-  height: 35vh
-}
-
-/***** Main style *****/
-
 .main-wrapper {
   background-color: var(--main-color);
   margin: var(--mobile-margin);
@@ -52,16 +41,11 @@ ul {
 .container {
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
-  /*border: 1px solid green;*/
 }
 
 .container-title {
   text-align: center;
   margin: 2rem;
-}
-
-.profilkep {
-  border-radius: 50%;
 }
 
 /***** Hamburger menu *****/
@@ -75,7 +59,7 @@ ul {
 }
 
 .hamburger-menu__wrapper {
- position: fixed;/*????????????*/
+ position: fixed;
  height: 60px;
  background-color: var(--secondary-color);
  top: 0;
@@ -131,9 +115,25 @@ ul {
   transition-duration: 0.4s;
 }
 
+/************************/
+/***** Header style *****/
+/************************/
 
+.nav-header {
+  margin-top: 3rem;
+}
 
-/***** Menu styles *****/
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 35vh
+}
+
+.profilkep {
+  border-radius: 50%;
+}
+
+/***** Nav styles *****/
 
 .nav-header {
   background-color: var( --secondary-color);
@@ -156,8 +156,9 @@ ul {
   color: var(--main-color);
 }
 
-.menu-item__link:hover {
-  background-color: #419D78;
+.menu-item__link:hover,
+.cta:hover {
+  background-color: var(--hover-bg-color);
   cursor: pointer;
 }
 
@@ -183,13 +184,11 @@ ul {
   visibility: hidden;
 }
 
-
-
 /**********************/
 /***** Main style *****/
 /**********************/
 
-/***** Banner container *****/
+/***** Banner section *****/
 
 .name-wrapper {
   height: 100%;
@@ -205,7 +204,6 @@ ul {
   letter-spacing: 0.1rem;
   text-align: center;
 }
-
 
 .name {
   width: 100%;
@@ -225,15 +223,23 @@ ul {
   margin-top: 1rem;
 }
 
-.cta {
+.cta,
+.form__submit {
   background-color: var(--secondary-color);
   color: var(--main-color);
   box-shadow: var(--button-shadow-default);
   padding: 0.8rem 1rem;
-  
+  border-radius: 0.25rem;
 }
 
-/***** Portfolio container *****/
+.cta:hover,
+.form__submit:hover {
+  background-color: #0669af;
+}
+
+/***** About section *****/
+
+/***** Portfolio section *****/
 
 .portfolio-box {
   outline: 1px solid yellow;
@@ -243,7 +249,7 @@ ul {
   width: 50vw;
 }
 
-/***** Skills container *****/
+/***** Skills section *****/
 
 .list-item {
   text-align: center;
@@ -256,6 +262,33 @@ ul {
 
 .icon-item {
   padding: 0.5rem;
+}
+
+/***** Contact section *****/
+
+.form-container {
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+.form__input {
+  background-color: #fdf1f1;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #18161600;
+}
+
+textarea.form__input {
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.form__submit { 
+  display: block;
+  margin: 0 auto;
+  border: none;
 }
 
 /***** Media query *****/
@@ -331,5 +364,4 @@ ul {
   .qualification {
     letter-spacing: 0.1rem;
   }
-
 }

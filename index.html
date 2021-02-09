@@ -92,7 +92,9 @@
                         Frontend Developer
                     </h2>
                     <div class="btn">
-                        <a href="resume" class="cta">Resume</a>
+                        <a href="oneletrajz.html" class="cta" target="_blank">
+                            Resume
+                        </a>
                     </div>
                 </div>
             </section>
@@ -195,20 +197,43 @@
             <section class="container  contact-container" id="kapcsolat">
                 <div class="section-box">
                     <h2 class="container-title">
-                        Contact
+                        Contact Me
                     </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Dicta deserunt culpa, quasi perferendis cupiditate 
-                        doloremque autem illo ratione blanditiis sunt a quod 
-                        exercitationem molestiae ipsam nam quos, omnis, 
-                        asperiores possimus.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Dicta deserunt culpa, quasi perferendis cupiditate 
-                        doloremque autem illo ratione blanditiis sunt a quod 
-                        exercitationem molestiae ipsam nam quos, omnis, 
-                        asperiores possimus.
-                    </p>
+
+                    <div class="form-container">
+                        <form class="contact__form" action="https://formspree.io/f/mvovwdkz" method="post">
+                            <div class="form__items">
+                                <label>
+                                    <input 
+                                    type="text" 
+                                    name="name" 
+                                    class="form__input"
+                                    placeholder="Name" 
+                                    required/>
+                                </label>
+
+                                <label>
+                                    <input 
+                                    type="email" 
+                                    name="email" 
+                                    class="form__input"
+                                    placeholder="Email address" 
+                                    required/>
+                                </label>
+
+                                <textarea
+                                    name="message" 
+                                    placeholder="Message"
+                                    class="form__input"></textarea>
+
+                                <input 
+                                    type="submit" 
+                                    class="form__submit"
+                                    value="Submit"
+                                />
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
         

@@ -1,0 +1,185 @@
+/***** General style *****/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-color: #000000;
+    --heighlighter-color: #eac934;
+    --base-text-shadow: 1px 1px grey;
+}
+
+body {
+    background-color: var(--heighlighter-color);
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90%;
+    margin: 2rem auto;
+    box-shadow: -9px 7px 7px 0px rgba(50, 50, 50, 0.5);
+
+}
+
+/***** Aside, main style *****/
+
+.contact,
+.skills,
+.language,
+.name-xs,
+.name-md,
+.profile,
+.education,
+.work-experience {
+    margin: 2rem 2.2rem;
+}
+
+.img-wrapper {
+   justify-content: center;
+   align-items: center;
+}
+
+.profile-picture {
+    width: 50%;
+    border-radius: 50%; 
+}
+
+.h1-style,
+.list-name,
+.name,
+.qualification,
+.h2-style {
+    text-shadow: var(--base-text-shadow);
+    letter-spacing: 0.1rem;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.qualification {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.name-md {
+    display: none;
+}
+
+.profile {
+    background-color: var(--heighlighter-color);
+    padding: 1rem;
+}
+
+.list-name {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.skills__item {
+    list-style: none;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.education 
+.list-item:first-child,
+.work-experience 
+.list-item:first-child {
+    padding-top: 0.6rem;
+    font-weight: bold;
+}
+
+.h1-style {
+    display: inline-block;
+    width: 1.7rem;
+    height: 5.7rem;
+    background-color: var(--heighlighter-color); 
+}
+
+.h2-style {
+    background-image: linear-gradient(
+        var(--heighlighter-color) 55%,
+		transparent 40%
+	);
+}
+
+.profile,
+.education-item,
+.work-experience__item {
+    padding-bottom: 1rem;
+}
+
+/***** Footer style *****/
+
+.copyright {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/***** Media query *****/
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img-wrapper,
+    .profile,
+    .name-md, 
+    .skills, 
+    .language, 
+    .education, 
+    .work-experience {
+        margin: 2.4rem 2.2rem;
+    }
+    
+    .name {
+        font-size: 2.6rem;
+    }
+
+    .name-xs {
+        display: none;
+    }
+
+    .name-md {
+        display: block;
+    }
+
+    .sidebar {
+        width: 40%;
+    }
+    
+    .content {
+        width: 60%;
+    }
+
+    .profile-picture {
+        width: 50%;
+    }
+
+    .list-item:first-child {
+        padding-top: 1rem;
+    }
+
+    .list-name {
+        padding: 0;
+    }
+
+
+}
+
