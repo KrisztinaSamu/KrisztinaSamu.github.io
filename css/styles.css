@@ -123,14 +123,11 @@ ul {
   margin-top: 3rem;
 }
 
-.img-wrapper {
-  display: flex;
-  justify-content: center;
-  height: 35vh
-}
-
 .profilkep {
+  display: block;
   border-radius: 50%;
+  height: 30vh;
+  margin: 0 auto;
 }
 
 /***** Nav styles *****/
@@ -235,6 +232,7 @@ ul {
 .cta:hover,
 .form__submit:hover {
   background-color: #0669af;
+ 
 }
 
 /***** About section *****/
@@ -245,8 +243,23 @@ ul {
   outline: 1px solid yellow;
 }
 
+.d-grid {
+  display: grid;
+  grid-gap: 2rem 1rem;
+}
+
 .project-picture {
-  width: 50vw;
+  width: 100%;
+}
+
+.portfolio__header {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.portfolio__description {
+  padding: 0.5rem ;
+  text-align: justify;
 }
 
 /***** Skills section *****/
@@ -324,6 +337,7 @@ textarea.form__input {
     width: 30vw;
     height: 100vh;
     margin-top: 0;
+    box-shadow: inset -6px 4px 8px 0 rgb(0 0 0 / 40%), inset 6px 4px 8px 0 rgb(0 0 0 / 40%);
   }
 
   .main-nav {
@@ -337,9 +351,7 @@ textarea.form__input {
     right: -30%;
   }
 
-  .footer {
-    width: 100%;
-  }
+  
   .main-wrapper {
     margin: 0;
   }
@@ -375,4 +387,9 @@ textarea.form__input {
   .qualification {
     letter-spacing: 0.1rem;
   }
+
+  .d-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+ 
 }
