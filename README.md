@@ -1,4 +1,4 @@
-Krisztina Samu portfolio webpage
+Krisztina Samu's portfolio webpage
 ================================
 Host
 ----
