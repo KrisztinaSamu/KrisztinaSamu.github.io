@@ -18,9 +18,6 @@ html {
   --button-shadow-hover: 0px 8px 15px rgba(0, 0, 0, 0.25);
   --main-color: #c8b289;
   --secondary-color: #163f5d;
-  --box-shadow-style: 
-    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   --hover-bg-color: #419D78;
 }
 
@@ -32,11 +29,6 @@ ul {
 .cta,
 .project__link {
   text-decoration: none;
-}
-
-.about-text,
-.portfolio__description {
-  text-align: justify;
 }
 
 .main-wrapper {
@@ -80,7 +72,8 @@ ul {
   position: fixed;
   top: 30px;
   right: 30px;
-  width: 40px;
+  width: 50px;
+  height: auto;
   margin: 0 15px;
   cursor: pointer;
   z-index: 1;
@@ -114,7 +107,6 @@ ul {
   width: 100%;
   padding: 1.875rem 0;
   background-color: var(--secondary-color);
-  height: 35vh;
   visibility: hidden;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
   /** Átmenet: felülről beúszik **/
@@ -133,7 +125,7 @@ ul {
 .profilkep {
   display: block;
   border-radius: 50%;
-  height: 30vh;
+  max-width: 11rem;
   margin: 0 auto;
 }
 
@@ -220,7 +212,6 @@ ul {
 
 .qualification {
   font-size: 1.7rem;
-  font-weight: 800;
 }
 
 .btn {
@@ -261,7 +252,7 @@ ul {
   grid-gap: 2rem 1rem;
 }
 
-.picture-wrapper {
+.project__wrapper {
   position: relative;
 }
 
@@ -295,7 +286,7 @@ ul {
   text-align: center;
 }
 
-.picture-wrapper:hover .overlay {
+.project__wrapper:hover .overlay {
   opacity: 0.9;
 }
 
@@ -304,13 +295,12 @@ ul {
   color: var(--hover-bg-color);
 }
 
-
-.portfolio__header {
+.project__header {
   padding: 2rem 0 0.5rem 0;
   text-align: center;
 }
 
-.portfolio__description {
+.project__description {
   padding: 0.5rem ;
 }
 
@@ -321,7 +311,6 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 
 .skill-img {
   width: 5rem;
@@ -351,7 +340,6 @@ ul {
 .form__input:focus {
   background-color: #bbb8b8;
 }
-
 
 textarea.form__input {
   width: 100%;
@@ -408,7 +396,6 @@ textarea.form__input {
     top: 0;
     left: 0;
     width: 30vw;
-    height: 100vh;
     margin-top: 0;
   }
 
@@ -444,11 +431,6 @@ textarea.form__input {
 
   .name-wrapper {
     width: 100%;
-  }
-
-  .name,
-  .qualification {
-    letter-spacing: 0.1rem;
   }
 
   /***** Media Portfolio style *****/
