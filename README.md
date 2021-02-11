@@ -1,2 +1,6 @@
-# KrisztinaSamu.github.io
-Portfolio page
+Krisztina Samu's portfolio webpage
+================================
+Host
+----
+https://krisztinasamu.github.io/
+
