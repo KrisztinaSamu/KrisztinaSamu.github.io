@@ -38,13 +38,23 @@ ul {
 
 .container {
   font-size: 1.5rem;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   width: 100%;
 }
 
 .container-title {
   text-align: center;
   margin: 2rem;
+}
+
+.hamburger-button,
+.menu-item,
+.menu-item:hover,
+.menu-item__link:hover,
+.cta:hover,
+.project__box:hover,
+.form__submit {
+  cursor: pointer;
 }
 
 /***** Hamburger menu *****/
@@ -75,7 +85,6 @@ ul {
   width: 50px;
   height: auto;
   margin: 0 15px;
-  cursor: pointer;
   z-index: 1;
 }
 
@@ -122,30 +131,76 @@ ul {
   margin-top: 3rem;
 }
 
+.img-wrapper,
+.main-nav {
+  background-color: var( --secondary-color);
+}
+
 .profilkep {
   display: block;
   border-radius: 50%;
-  max-width: 11rem;
+  max-width: 10rem;
   margin: 0 auto;
 }
 
-/***** Nav styles *****/
+/***** Banner section *****/
 
-.nav-header {
-  background-color: var( --secondary-color);
+.name-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
+.name,
+.qualification {
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.name {
+  width: 100%;
+  font-size: 2.9rem;
+  font-weight: 500;
+}
+
+.qualification {
+  font-size: 1.7rem;
+}
+
+.btn {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta,
+.form__submit {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  box-shadow: var(--button-shadow-default);
+  padding: 0.8rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.cta:hover,
+.form__submit:hover {
+  background-color: #0669af;
+}
+
+/***** Nav styles *****/
 
 .menu-item {
   text-align: center;
   font-size: 1.1rem;
   margin: 0.5rem;
   padding: 0.5rem;
-  cursor: pointer;
 }
 
 .menu-item:hover {
   background-color: #419D78;
-  cursor: pointer;
 }
 
 .menu-item__link {
@@ -155,7 +210,6 @@ ul {
 .menu-item__link:hover,
 .cta:hover {
   background-color: var(--hover-bg-color);
-  cursor: pointer;
 }
 
 #menu__toggle:checked ~ .hamburger-menu__box {
@@ -184,55 +238,6 @@ ul {
 /***** Main style *****/
 /**********************/
 
-/***** Banner section *****/
-
-.name-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.name,
-.qualification {
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.1rem;
-  text-align: center;
-}
-
-.name {
-  width: 100%;
-  font-size: 2.9rem;
-  font-weight: 500;
-  text-shadow: 1px 1px grey;
-  line-height: 3rem;
- 
-}
-
-.qualification {
-  font-size: 1.7rem;
-}
-
-.btn {
-  margin-top: 1rem;
-}
-
-.cta,
-.form__submit {
-  background-color: var(--secondary-color);
-  color: var(--main-color);
-  box-shadow: var(--button-shadow-default);
-  padding: 0.8rem 1rem;
-  border-radius: 0.25rem;
-}
-
-.cta:hover,
-.form__submit:hover {
-  background-color: #0669af;
- 
-}
-
 /***** About section *****/
 
 /***** Portfolio section *****/
@@ -241,10 +246,6 @@ ul {
   max-width: 30rem;
   border: 2px solid #7c7b7b;
   margin: 0 auto;
-}
-
-.project__box:hover {
-  cursor: pointer;
 }
 
 .d-grid {
@@ -329,6 +330,7 @@ ul {
 }
 
 .form__input {
+  font-family: 'Raleway', sans-serif;
   background-color: #fdf1f1;
   width: 100%;
   margin: 0.5rem auto 1rem;
@@ -337,17 +339,20 @@ ul {
   outline: 0;
 }
 
-.form__input:focus {
-  background-color: #bbb8b8;
+.form__input:focus-within {
+  outline: 1px solid rgb(94, 93, 93);
+  /*box-shadow: 0px 0.2em 2.5em #c4c4c4;
+  transform: scale(1.025); */
 }
 
 textarea.form__input {
-  width: 100%;
   height: 15rem;
   overflow: hidden;
 }
 
 .form__submit { 
+  width: 100%;
+  font-size: 1.2rem;
   display: block;
   margin: 0 auto;
   border: none;
@@ -395,8 +400,8 @@ textarea.form__input {
     position: fixed;
     top: 0;
     left: 0;
-    width: 30vw;
-    margin-top: 0;
+    width: 25vw;
+    margin: 0;
   }
 
   /***** Media Nav menu *****/
@@ -429,8 +434,26 @@ textarea.form__input {
 
   /***** Media Name style *****/
 
+  .banner-container {
+    background-color: var(--secondary-color);
+    padding: 0 1.5rem;
+  }
+
   .name-wrapper {
     width: 100%;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .qualification {
+    font-size: 1.5rem;
+  }
+
+  .name, 
+  .qualification {
+    color: var(--main-color);
   }
 
   /***** Media Portfolio style *****/
@@ -438,5 +461,4 @@ textarea.form__input {
   .d-grid {
     grid-template-columns: 1fr 1fr;
   }
- 
 }
