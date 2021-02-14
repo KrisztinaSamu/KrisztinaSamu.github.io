@@ -15,9 +15,9 @@
         <div class="hamburger-menu__wrapper">
             <div class="hamburger-menu">
                 <input type="checkbox" name="hamburger" id="menu__toggle"/>
-                <label for="menu__toggle" class="hamburger-button">
-                    <span class="hamburger-lines"></span>
-                </label>
+                    <label for="menu__toggle" class="hamburger-button  hamburger-button-style">
+                        <span class="hamburger-lines"></span> 
+                    </label>
 
                 <ul class="hamburger-menu__box">
                     <li class="menu-item">
@@ -45,23 +45,21 @@
         </div>
     
         <header class="nav-header">
-            <div class="container  img-wrapper">
-                <img src="img/i.jpg" alt="profilkep" class="profilkep" />
-            </div>
+            <section class="container  banner-container"></section>
+                <div class="container  img-wrapper">
+                    <img src="img/i.jpg" alt="profilkep" class="profilkep" />
+                </div>
 
-            <section class="container  banner-container">
                 <div class="name-wrapper">
                     <h1 class="name">
                         Samu Krisztina
                     </h1>
                     <h2 class="qualification">
                         Frontend Developer
-                    </h2>
-                    
+                    </h2> 
                 </div>
             </section>
         
-
             <nav class="container  main-nav">
                 <ul class="main-nav__menu">
                     <li class="menu-item">
@@ -86,6 +84,20 @@
                     </li>
                 </ul>
             </nav>
+            <div class="container icons-container">
+                <ul class="icons">
+                    <li class="icon__item">
+                        <a href="#" class ="icon__sm">
+                            <i class="fab fa-github fa-1x"></i>
+                        </a> 
+                    </li>
+                    <li class="icon__item">
+                        <a href="#" class ="icon__sm">
+                            <i class="fab fa-linkedin-in fa-1x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </header>
 
         <main class="main-content">
@@ -93,7 +105,7 @@
             <section class="container  about-container" id="rolam">
                 <div class="section-box">
                     <h2 class="container-title">
-                        About
+                        Hello, I'm Krisztina.
                     </h2>
                     <p class="about-text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -260,40 +272,19 @@
                                 <input 
                                     type="submit" 
                                     class="form__submit"
-                                    value="Submit"
-                                />
+                                    value="Submit"/>
                             </div>
                         </form>
                     </div>
                 </div>
             </section>
         
-
-        <footer class="main-footer  container">
-            <ul class="icons">
-                <li class="icon-item">
-                    <a href="#" class ="github__icon">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a> 
-                </li>
-                <li class="icon-item">
-                    <a href="#" class ="linkedin__icon">
-                        <i class="fab fa-linkedin-in fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="copyright">
-                Copyright &copy; 2021
-            </div>
-        </footer>
-    </main>
+            <footer class="main-footer  container">
+                <div class="copyright">
+                    Copyright &copy; 2021
+                </div>
+            </footer>
+        </main>
     </div>
 </body>
 </html>
-<!-- React kép hiányzik
-Desktop nézetben a bal oldali rész túl sok helyet foglal el ahhoz képest, hogy milyen üres, lehet oda egy-két apróságot tenni talán, pl. kulcsszavakat. Legalább a neved kerülhetne oda a kép alá és a szakmád
-Az űrlapon a textarea placeholder betűtípusa más, mint a másik két mező betűtípusa
-A footerben a GitHub és LinkedIn legyen kattintható és mutasson a profilodra (vagy ha nincs, akkor legalább csinálj úgy, mintha link lenne).
-Hamburger menüvel valami nem stimmel. Néha nem fogadja a kattintásokat, de ami még rosszabb, amikor végre tudok kattintani hamburgerből X-et, akkor gyakran ugyanott kattintva az X-ből nem lesz hamburger. A kattintás felületét vedd nagyobbra és legyen ugyanott mind nyitott, mind zárt állapotban
-Az űrlap alatti gomb legyen nagyobb és a kurzor legyen pointer
-Hamburger menü színe sötétkéken fekete rossz kontrasztot biztosít-->
