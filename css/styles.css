@@ -170,6 +170,10 @@ ul {
   background-color: var( --secondary-color);
 }
 
+.img-wrapper {
+  padding: 1.25rem;
+}
+
 .profilkep {
   display: block;
   border-radius: 50%;
@@ -178,11 +182,10 @@ ul {
 }
 
 .name-wrapper {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .name,
@@ -261,6 +264,16 @@ ul {
 
 .icon__sm:hover {
   color: var(--hover-bg-color);
+}
+
+.icons-sm-view {
+  font-size: 1.5rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  width: 100%;
+}
+
+.icons-lg-view {
+  display: none;
 }
 
 /**********************/
@@ -390,7 +403,6 @@ textarea.form__input {
 .copyright {
   text-align: center;
   font-size: 1rem;
-  margin-top: 1rem;
 }
 
 /***********************/
@@ -398,6 +410,10 @@ textarea.form__input {
 /***********************/
 
 @media screen and (min-width: 768px) {
+
+  .container {
+    padding: 0;
+  }
 
   .main-wrapper {
     margin: 0;
@@ -417,18 +433,18 @@ textarea.form__input {
   .nav-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
-    width: 28vw;
+    width: 24vw;
     height: 100vh;
     margin: 0;
     background-color: var(--secondary-color);
   }
 
   .img-wrapper {
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem;
   }
 
   /***** Media Nav menu *****/
@@ -445,25 +461,23 @@ textarea.form__input {
   }
 
   .main-content {
-    width: calc(100% - 31vw);
+    width: calc(100% - 34vw);
     position: relative;
     top: 0;
-    right: -30%;
+    right: -29%;
   }
 
   /***** Media Name style *****/
 
-  .banner-container {
-    padding: 0 1.5rem;
-  }
-
   .name-wrapper {
     max-width: 18rem;
     margin: 0 auto;
+    padding: 0 0.25rem;
+
   }
 
   .name {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin: 0;
   }
 
@@ -484,9 +498,20 @@ textarea.form__input {
   }
 
   /***** Media Icons style *****/
+  .icons-sm-view {
+    display: none;
+  }
+
+  .icons-lg-view {
+    display: block;
+  }
   
   .icon__sm {
     color: var(--main-color);
     margin: 1rem;
+  }
+
+  .copyright {
+    margin: 1rem 1rem 0.25rem 1rem;
   }
 }
